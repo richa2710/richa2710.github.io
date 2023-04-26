@@ -324,8 +324,12 @@ li{
   font-size: 11pt;
 }
 
+#sidebar photo{
+  margin-top: 0.1in;
+}
+
 .side-block{
-  margin-top: 0.1in; 
+  margin-top: 0.5in; 
 }
 
 #contact ul{
