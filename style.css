@@ -380,7 +380,7 @@ li{
   body {
     font-size: 16px;           /* base font larger on laptops */
     width: 95%;                /* wider than mobile, leaves small margin */
-    max-width: calc(var(--page-width) + 0.5in); /* keeps proportion with sidebar */
+    max-width: calc(var(--page-width) + 2.5in); /* keeps proportion with sidebar */
     margin: auto;
   }
 
