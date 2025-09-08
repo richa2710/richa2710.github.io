@@ -385,12 +385,13 @@ li{
   }
   #page-container {
     display: flex;
+    width: 100%;
     align-items: flex-start; /* align top of sidebar and main */
   }
 
   /* Main and sidebar columns */
   #main {
-    flex: 0 0 calc(var(--main-width) + 1in); /* wider main column */
+    flex: 0 0 calc(var(--main-width) + 2in); /* wider main column */
     font-size: 1rem;
   }
 
@@ -407,8 +408,8 @@ li{
 
   /* Date column width */
   .date {
-    flex: 0 0 0.55in; 
-    font-size: 1rem;
+    flex: 0 0 0.65in; 
+    font-size: 0.8rem;
   }
 
   /* Flex container for blocks */
@@ -427,7 +428,7 @@ li{
   .details .place,
   .details .location {
     float: none;
-    font-size: 1rem; /* adjust font size */
+    font-size: 0.8rem; /* adjust font size */
   }
 
   /* Main title */
