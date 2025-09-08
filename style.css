@@ -382,6 +382,10 @@ li{
     width: 95%;                /* leaves small margin on sides */
     max-width: calc(var(--page-width) + 2.5in); 
     margin: auto;
+    display: flex;             /* enable flex for optional vertical centering */
+    flex-direction: column;    /* stack content vertically */
+    justify-content: flex-start; /* keep top aligned, not middle */
+    align-items: center;       /* horizontal centering inside flex */
   }
   #page-container {
     display: flex;
@@ -420,13 +424,20 @@ li{
   /* Header inside details */
   .details header {
     display: flex;
-    justify-content: space-between; /* place left/right */
+    flex-direction: column; /* stack elements vertically */
   }
 
   /* Remove floats inside details */
-  .details .place,
+  
+  .details .place {
+    float: none;          /* remove old float */
+    margin-top: 0.1rem;   /* small gap below job title */
+    font-size: 0.8rem;    /* adjust font size for laptop */
+  }
   .details .location {
+    float: none;
     font-size: 0.8rem; /* adjust font size */
+    margin-top: 0.05rem;
   }
 
   /* Main title */
