@@ -374,3 +374,11 @@ li{
   font-style: normal;
 }
 
+@media screen and (min-width: 1024px) {
+  body {
+    width: 90%;           /* shrink a bit from full print width */
+    max-width: 6.4in + calc(var(--sidebar-width)); /* keep roughly same proportions */
+    margin: auto;          /* center it */
+  }
+}
+
