@@ -435,7 +435,8 @@ li{
     font-size: 0.8rem;    /* adjust font size for laptop */
   }
   .details .location {
-    float: right;
+    float: none;           /* remove old float */
+    align-self: flex-end;  /* when inside flex box, float right doesn't work*/
     font-size: 0.8rem; /* adjust font size */
     margin-top: 0.05rem;
   }
