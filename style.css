@@ -391,7 +391,7 @@ li{
 
   /* Main and sidebar columns */
   #main {
-    flex: 0 0 calc(var(--main-width) + 0.3in); /* slightly wider */
+    flex: 0 0 calc(var(--main-width) + 1in); /* slightly wider */
     font-size: 1rem;
   }
 
@@ -427,6 +427,35 @@ li{
   .date, .details .location {
     font-size: 1rem;     /* ~16px */
   }
+  .details .place {
+    font-size: 1rem; 
+  }
+  .blocks {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start; /* align child elements to top */
+  }
+
+  .details, .date, .decorator {
+    padding-top: 0; /* ensure all blocks start at the same vertical point */
+    margin-top: 0;
+  }
+    .details header {
+    display: flex;
+    justify-content: space-between; /* place on left/right */
+  }
+  
+  .details .place {
+    float: none; /* remove float */
+  }
+  
+  .details .location {
+    float: none; /* remove float */
+  }
+  .side-block {
+    margin-top: 1rem; /* similar to main-block spacing */
+  }
+  
 }
 
 
