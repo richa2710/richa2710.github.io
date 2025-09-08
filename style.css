@@ -390,7 +390,7 @@ li{
 
   /* Main and sidebar columns */
   #main {
-    flex: 0 0 calc(var(--main-width) + 1in); /* wider main column */
+    flex: 0 0 calc(var(--main-width) + 2.5in); /* wider main column */
     font-size: 1rem;
   }
 
@@ -407,7 +407,7 @@ li{
 
   /* Date column width */
   .date {
-    flex: 0 0 0.65in; 
+    flex: 0 0 1.0in; 
     font-size: 0.8rem;
   }
 
