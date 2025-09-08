@@ -384,9 +384,17 @@ li{
   #main, #sidebar {
     font-size: 15px;       /* adjust columns proportionally */
   }
-  h1, h2, h3 {
-    /* optional: scale headings */
-    font-size: 20px;
+
+  h1 {
+    font-size: 2rem; /* 32px, proportional to body */
+  }
+
+  h2 {
+    font-size: 1.5rem; /* 24px */
+  }
+
+  h3 {
+    font-size: 1.25rem; /* 20px */
   }
 }
 
