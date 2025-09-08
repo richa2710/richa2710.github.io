@@ -386,7 +386,7 @@ li{
 
   /* Main and sidebar columns */
   #main {
-    flex: 0 0 calc(var(--main-width) + 1in); /* wider main column */
+    flex: 0 0 calc(var(--main-width) + 2in); /* wider main column */
     font-size: 1rem;
   }
 
