@@ -376,42 +376,60 @@ li{
 
 /* Laptop/Desktop layout and font scaling */
 @media screen and (min-width: 1024px) {
-  /* Body */
+  /* Body scaling and centering */
   body {
-    width: 90%;
-    max-width: calc(6.4in + var(--sidebar-width));
+    font-size: 16px;           /* base font larger on laptops */
+    width: 95%;                /* wider than mobile, leaves small margin */
+    max-width: calc(var(--page-width) + 0.5in); /* keeps proportion with sidebar */
     margin: auto;
-    font-size: 16px; /* base font for laptops */
   }
 
-  /* Main content and sidebar text */
-  #main, #sidebar {
-    font-size: 1rem; /* matches body */
+  /* Flex container widths */
+  #page-container {
+    width: 100%;
+  }
+
+  /* Main and sidebar columns */
+  #main {
+    flex: 0 0 calc(var(--main-width) + 0.3in); /* slightly wider */
+    font-size: 1rem;
+  }
+
+  #sidebar {
+    flex: 0 0 calc(var(--sidebar-width) + 0.2in); /* sidebar slightly wider */
+    font-size: 1rem;
   }
 
   /* Main title */
   #title h1 {
-    font-size: 2.5rem;  /* ~40px if body = 16px */
+    font-size: 2.5rem;   /* ~40px */
     line-height: 1.2;
   }
 
-  /* Section headings like Experience, Education, etc. */
+  /* Section headings */
   #main h2 {
-    font-size: 2rem;    /* ~32px */
+    font-size: 2rem;     /* ~32px */
     line-height: 1.3;
   }
 
   /* Job/degree titles inside details */
   .details h3 {
-    font-size: 1.5rem;  /* ~24px */
+    font-size: 1.5rem;   /* ~24px */
     line-height: 1.3;
   }
 
   /* Sidebar headings */
   #sidebar h1 {
-    font-size: 1.25rem; /* slightly bigger than body */
+    font-size: 1.25rem;
+  }
+
+  /* Date and location */
+  .date, .details .location {
+    font-size: 1rem;     /* ~16px */
   }
 }
+
+
 
 
 
