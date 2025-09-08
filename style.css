@@ -378,26 +378,52 @@ li{
 @media screen and (min-width: 1024px) {
   /* Body scaling and centering */
   body {
-    font-size: 16px;           /* base font larger on laptops */
-    width: 95%;                /* wider than mobile, leaves small margin */
-    max-width: calc(var(--page-width) + 2.5in); /* keeps proportion with sidebar */
+    font-size: 16px;           /* larger base font */
+    width: 95%;                /* leaves small margin on sides */
+    max-width: calc(var(--page-width) + 2.5in); 
     margin: auto;
-  }
-
-  /* Flex container widths */
-  #page-container {
-    width: 100%;
   }
 
   /* Main and sidebar columns */
   #main {
-    flex: 0 0 calc(var(--main-width) + 1in); /* slightly wider */
+    flex: 0 0 calc(var(--main-width) + 1in); /* wider main column */
     font-size: 1rem;
   }
 
   #sidebar {
-    flex: 0 0 calc(var(--sidebar-width) + 0.2in); /* sidebar slightly wider */
+    flex: 0 0 calc(var(--sidebar-width) + 0.2in); /* slightly wider sidebar */
     font-size: 1rem;
+  }
+
+  /* Details column fills remaining width */
+  .details {
+    flex: 1 0 0;
+    padding-left: 0.2in;
+  }
+
+  /* Date column width */
+  .date {
+    flex: 0 0 0.55in; 
+    font-size: 1rem;
+  }
+
+  /* Flex container for blocks */
+  .blocks {
+    display: flex;
+    align-items: flex-start; /* align top of each block */
+  }
+
+  /* Header inside details */
+  .details header {
+    display: flex;
+    justify-content: space-between; /* place left/right */
+  }
+
+  /* Remove floats inside details */
+  .details .place,
+  .details .location {
+    float: none;
+    font-size: 1rem; /* adjust font size */
   }
 
   /* Main title */
@@ -423,40 +449,12 @@ li{
     font-size: 1.25rem;
   }
 
-  /* Date and location */
-  .date, .details .location {
-    font-size: 1rem;     /* ~16px */
-  }
-  .details .place {
-    font-size: 1rem; 
-  }
-  .blocks {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: flex-start; /* align child elements to top */
-  }
-
-  .details, .date, .decorator {
-    padding-top: 0; /* ensure all blocks start at the same vertical point */
-    margin-top: 0;
-  }
-    .details header {
-    display: flex;
-    justify-content: space-between; /* place on left/right */
-  }
-  
-  .details .place {
-    float: none; /* remove float */
-  }
-  
-  .details .location {
-    float: none; /* remove float */
-  }
+  /* Side-block spacing */
   .side-block {
-    margin-top: 1rem; /* similar to main-block spacing */
+    margin-top: 1rem;
   }
-  
 }
+
 
 
 
