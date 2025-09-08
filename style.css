@@ -435,7 +435,7 @@ li{
     font-size: 0.8rem;    /* adjust font size for laptop */
   }
   .details .location {
-    float: none;
+    float: right;
     font-size: 0.8rem; /* adjust font size */
     margin-top: 0.05rem;
   }
