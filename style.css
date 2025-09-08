@@ -382,19 +382,18 @@ li{
     font-size: 16px;       /* increase base font on laptops */
   }
   #main, #sidebar {
-    font-size: 15px;       /* adjust columns proportionally */
+    font-size: 1rem;  
   }
 
-  h1 {
-    font-size: 2rem; /* 32px, proportional to body */
+  /* Headings inside main */
+  #main h1 {
+    font-size: 2.5rem; /* bigger main title */
   }
-
-  h2 {
-    font-size: 1.5rem; /* 24px */
+  #main h2 {
+    font-size: 2rem;   /* Experience, Education, etc */
   }
-
-  h3 {
-    font-size: 1.25rem; /* 20px */
+  .details h3 {
+    font-size: 1.5rem; /* job/degree titles */
   }
 }
 
