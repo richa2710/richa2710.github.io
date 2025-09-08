@@ -426,7 +426,6 @@ li{
   /* Remove floats inside details */
   .details .place,
   .details .location {
-    float: none;
     font-size: 0.8rem; /* adjust font size */
   }
 
